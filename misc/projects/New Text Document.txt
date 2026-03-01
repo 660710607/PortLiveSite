@@ -1,0 +1,15 @@
+Veterinary Clinic Database Management | SQL, MySQL, PuTTY
+Designed and implemented a relational database system, deployed and managed the database using MySQL via phpMyAdmin with remote access using PuTTY (SSH).
+Developed analytical SQL queries (DDL & DML) for CRUD operations, using JOINs and subqueries to extract insights.
+applied database normalization (1NF - 3NF) to minimize data redundancy and improve consistency.
+
+Telecom Churn Analysis | Python, SQL Server, Power BI
+end-to-end churn prediction system using SQL Server data pipelines with Python workflow.
+delivered a Streamlit dashboard and Power BI reports for real-time customer churn insights, increasing recall by 15% compared with rule-based baseline.
+more accurate churn detection and higher ROI.
+
+Fruit & Vegetable Image Classification System | Python, TensorFlow, Keras, Deep Learning
+Conducted EDA using NumPy and Matplotlib to analyze dataset distribution and quality.
+Performed Image Preprocessing with OpenCV and Numpy.
+Built a CNN using Keras with ResNet50 pretrained model for Image Classification.
+Trained model in TensorFLow/Keras, monitor Model Evaluation and visualize with Matplotlib.

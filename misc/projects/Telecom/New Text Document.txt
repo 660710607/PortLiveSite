@@ -1,0 +1,21 @@
+Goal
+Developed a complete analytics project to understand and predict customer churn. Built an ETL pipeline in SQL Server to clean and transform customer data. Designed a Power BI dashboard to visualize key metrics such as churn rate, customer segments, and revenue loss. Implemented predictive modeling to identify high-risk customers and support proactive retention strategies. Tools used: SQL Server, Power BI, Python (ML).
+การศึกษาข้อมูลลูกค้าเพื่อดูว่าลูกค้าคนไหนมีแนวโน้มจะเลิกใช้บริการ (churn) , ช่วยให้เข้าใจพฤติกรรมลูกค้า และปัจจัยเสี่ยงต่างๆ , และหาปัจจัยที่ทำให้เกิด churn เพื่อช่วยให้บริษัทสามารถวางแผนกลยุทธ์รักษาลูกค้าได้ดีขึ้น
+
+Tools & Techniques
+-Database & ETL : ใช้ SQL Server สำหรับจัดเก็บและแปลงข้อมูลจากไฟล์ CSV เข้าสู่ฐานข้อมูล
+-Data Cleaning: ตรวจสอบค่าว่าง, จัดกลุ่มข้อมูล และจัดการค่า inconsistent ก่อนวิเคราะห์
+-Power BI: สร้าง Dashboard ที่แสดงภาพรวมเชิงข้อมูล เช่น Churn Rate, จำนวนลูกค้าทั้งหมด, การแบ่งกลุ่มตามเพศ อายุ หรือประเภทบริการ
+-Predictive Modeling : ระบบอาจรวมการทำนายลูกค้าที่มีแนวโน้มจะ churn ด้วย Machine Learning โดยใช้ algorithm Random Forest และอื่นๆ และแสดงผลลัพธ์บน Dashboard
+
+Workflow
+-Import and Load Data: นำข้อมูลลูกค้าจากไฟล์ .csv เข้าไปในฐานข้อมูล SQL Server
+-ETL & Cleaning: ตรวจสอบข้อมูลที่ขาดหาย และย้ายข้อมูลไปตาราง production สำหรับใช้งาน
+-Data Transformation: สร้างตารางช่วย (auxiliary tables) เพื่อจัดกลุ่มอายุ, ระยะเวลาการเป็นลูกค้า, และระดับค่าบริการ
+-Dashboard: สร้าง Power BI Dashboard ที่มี metrics หลัก
+-Prediction: ใช้โมเดล Machine Learning เพื่อทำนายลูกค้าที่อาจ churn ในอนาคต และเชื่อมผลลัพธ์กับ Power BI
+
+Examples
+-Power BI dashboard ช่วยติดตาม metrics แบบ real-time
+-เพศหรือช่วงอายุใดมีแนวโน้ม churn สูงสุด
+-แพ็กเกจบริการบางประเภทมี churn rate สูงกว่า

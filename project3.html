@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit &amp; Veg Image Classification | Project Details</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS (animations only) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white text-gray-900 leading-relaxed antialiased">
+
+    <!-- Navigation -->
+    <nav class="h-20 flex items-center sticky top-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-[1000px] mx-auto px-5 flex justify-between items-center w-full">
+            <div class="text-2xl font-bold text-gray-900"><a href="index.html"></a></div>
+            <ul class="hidden md:flex list-none gap-8">
+                <li><a href="index.html#about"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">About</a></li>
+                <li><a href="index.html#skills"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Skills</a></li>
+                <li><a href="index.html#projects"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Projects</a></li>
+                <li><a href="index.html#contact"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Details -->
+    <section class="py-20">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="index.html#projects"
+                class="inline-block mb-5 px-7 py-3 rounded-md font-medium text-sm border border-gray-500 text-gray-500 hover:border-gray-600 hover:text-gray-600 hover:bg-gray-100 transition-all"><i
+                    class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+            <h1 class="text-4xl font-bold tracking-tight mb-2">Fruit &amp; Vegetable Image Classification System</h1>
+            <div class="mb-8">
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">Python</span>
+                <span
+                    class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">TensorFlow</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">Keras</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">Deep
+                    Learning</span>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold tracking-tight mb-3">Goal</h3>
+                <p class="text-gray-500 mb-2">
+                    The primary objective of this project is Image Classification. Specifically, it aims to classify
+                    images of various fruits and vegetables (such as apples, bananas, carrots, and tomatoes) into their
+                    respective categories based on predefined labels.
+                </p>
+                <p class="text-gray-400 italic">
+                    สร้างโมเดลเพื่อจำแนกภาพถ่ายของผลไม้และผักชนิดต่างๆ ออกเป็นคลาสตามป้ายกำกับ (Label)
+                    ที่กำหนดไว้ เช่น แอปเปิล, กล้วย, แคร์รอต และมะเขือเทศ เป็นต้น
+                </p>
+                <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">Tools &amp; Techniques</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>สถาปัตยกรรมโมเดล (Model Architectures): </strong> มีการทดลองใช้ทั้ง CNN (Convolutional
+                        Neural Network) ที่สร้างโครงสร้างขึ้นเอง, และโมเดลสำเร็จรูปที่มีประสิทธิภาพสูง ได้แก่ ResNet50,
+                        MobileNetV2 และ EfficientNetB0</li>
+                    <li><strong>เทคนิคการเรียนรู้ (Learning Techniques): </strong></li>
+                    <p class="text-gray-500 mb-2">
+                        <strong>- Transfer Learning:</strong> ใช้ความรู้และค่าน้ำหนัก (Weights)
+                        ที่ผ่านการฝึกฝนจากชุดข้อมูล ImageNet
+                        มาเป็นพื้นฐานสำหรับ ResNet50, MobileNetV2 และ EfficientNetB0 เพื่อช่วยในการดึงลักษณะเด่น
+                        (Feature Extraction) ของภาพ
+                    </p>
+                    <p class="text-gray-500 mb-2">
+                        <strong>- Fine-tuning & Freezing:</strong> มีการ "แช่แข็ง" (Freeze)
+                        ชั้นฐานของโมเดลเพื่อใช้ดึงข้อมูลภาพเพียงอย่างเดียว และเทรนเฉพาะส่วนหัว (Head) ที่สร้างใหม่
+                        รวมถึงการปลดล็อกบางชั้นเพื่อปรับแต่งให้เข้ากับชุดข้อมูลนี้โดยเฉพาะ
+                    </p>
+                    <li><strong>การปรับปรุงประสิทธิภาพโมเดล: </strong></li>
+                    <p class="text-gray-500 mb-2">
+                        <strong>- Data Augmentation:</strong>
+                        เพิ่มความหลากหลายของข้อมูลและลดปัญหาการจำข้อมูลที่เฉพาะเจาะจงเกินไป (Overfitting) ด้วยการหมุนภาพ
+                        (Rotation), ซูม (Zoom) และพลิกภาพ (Horizontal Flip) แบบสุ่ม<br>
+                        <strong>- Regularization:</strong>
+                        ใช้ชั้น Dropout เพื่อปิดการทำงานของเซลล์ประสาทบางส่วนชั่วคราวระหว่างการฝึก และใช้ MaxPooling
+                        เพื่อลดขนาดข้อมูลพารามิเตอร์<br>
+                        <strong>- Optimizer & Loss Function:</strong>
+                        ใช้ Adam เป็นตัวช่วยปรับค่าน้ำหนักเนื่องจากมีความเสถียรและรวดเร็ว, โดยมี Categorical
+                        Crossentropy หรือ Sparse Categorical Crossentropy เป็นฟังก์ชันวัดความคลาดเคลื่อน
+                    </p>
+                </ul>
+                <h3 class="text-xl font-bold tracking-tight mb-3">วิธีการแบบคร่าวๆ</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>1. เตรียม Dataset</strong></li>
+                    <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                        <p class="text-gray-400 italic">
+                            - Fruit and Vegetables :
+                            https://www.kaggle.com/datasets/youssefsalahzakria/fruit-and-vegetables-classification<br>
+                            - ประเภทข้อมูล : ภาพถ่ายสี (RGB) ของผลไม้และผัก, ขนาดภาพส่วนใหญ่เป็น 300x300 พิกเซล, 3
+                            channel
+                            (Red, Green, Blue)<br>
+                            - Label คือ ชื่อชนิดของผลไม้หรือผัก เช่น apple, banana, carrot, tomato และอื่นๆ<br>
+                            - จำนวนภาพทั้งหมด: 72084 ไฟล์ : trainset 50458 ภาพ (70%) , validationset 14416 ภาพ (20%) ,
+                            testset 7210 ภาพ (10%)<br>
+                            ตัวอย่างรูปแต่ละคลาส
+                        </p>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/1.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        <li><strong>2. กระบวนการ Preprocessing</strong></li>
+                        <p class="text-gray-400 italic">
+                            - ImageDataGenerator เพิ่มความหลากหลายของภาพด้วยการหมุน ซูม พลิก และnormalize
+                            พิกเซลแบบอัตโนมัติ ช่วยลด overfitting และทำให้โมเดลเรียนรู้ได้ดีขึ้นจากข้อมูลเดิม และประหยัด
+                            RAM และ VRAM<br>
+                            - validation_split=0.15 - แบ่งข้อมูลออกเป็น training และ validation โดยใช้ 15% สำหรับ
+                            validation<br>
+                            - rotation_range=20 - หมุนภาพแบบสุ่มในช่วง ±20 องศา<br>
+                            - zoom_range=0.2 - ซูมภาพแบบสุ่มในช่วง ±20%<br>
+                            - horizontal_flip=True - พลิกภาพในแนวนอนแบบสุ่ม<br>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/2.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        </p>
+                        <li><strong>3. Model CNN</strong></li>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/3_1.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            <strong>Activation Functions<br> </strong>
+                            - ReLU : ใช้ใน Conv และ Dense เพื่อเพิ่ม non-linearity<br>
+                            - Softmax : ใช้ใน output layer สำหรับ multi-class classification
+                        </p>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            <strong>Loss Function : </strong>
+                            categorical_crossentropy - วัดความแม่นยำของการทำนาย<br>
+                            <strong>Optimizer : </strong>
+                            Adam(learning_rate=0.001) - ปรับ learning rate อัตโนมัติ, เสถียรและเร็ว<br>
+                            = ลำดับการทำงานคือ Conv → Pool → Flatten → Dense → Output
+                        </p>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            <strong>เทคนิคที่ใช้แก้ปัญหา Overfitting<br> </strong>
+                            - Dropout(0.5) : ปิดบาง neurons แบบสุ่มระหว่างเทรน ช่วยลดการพึ่งพา feature
+                            เฉพาะเจาะจงเกินไป<br>
+                            - ใช้ MaxPooling2D : ลดขนาด feature map เพื่อลดจำนวนพารามิเตอร์ เพื่อลดโอกาส overfit<br>
+                            - ใช้ ReLU + Softmax : ReLU ช่วยให้เรียนรู้เร็วและไม่ซับซ้อนเกินไป ส่วน Softmax เหมาะกับ
+                            multi-class classification<br>
+                            มี Layer ทั้งหมด 8 ชั้น : Convolutional 2, MaxPooling 2, Hidden Dense 1, Output
+                            1,Dropout 1<br><br>
+                            <strong>Plot Train/Validation Accuracy & Loss </strong>
+                        </p>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/3_2.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        <li><strong>4. Model ResNet50</strong></li>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/4_1.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            - โมเดลนี้เป็น Convolutional Neural Network แบบ Residual Network
+                            (ResNet)ซึ่งออกแบบมาเพื่อจำแนกรูปภาพผลไม้ขนาด 128x128 พิกเซล (RGB)โดยใช้ Transfer Learning
+                            จากโมเดล ResNet50 ที่ผ่านการเทรนจาก ImageNet<br>
+                            - มี Convolution Layer 49 ชั้น<br>
+
+                        </p>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            <strong>Activation Functions : </strong>
+                            - ReLU : ใช้ในทุก Residual Block เพื่อเพิ่ม non-linearity<br>
+                            - Softmax : ใช้ใน Output Layer สำหรับ multi-class classification<br>
+                            <strong>Loss Function : </strong>
+                            categorical_crossentropy — ใช้วัดความแม่นยำของการจำแนกภาพหลายคลาส<br>
+                            <strong>Optimizer : </strong>
+                            Adam (learning_rate = 1e-4) ปรับ learning rate อัตโนมัติ ช่วยให้เทรนเร็วและเสถียร<br>
+                            = ลำดับการทำงานคือ Input → ResNet50 (Feature Extractor) → GlobalAveragePooling → Dropout →
+                            Dense → Output
+                        </p>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            <strong>เทคนิคที่ใช้แก้ปัญหา Overfitting<br> </strong>
+                            - Dropout(0.3) : ปิดการทำงานบาง neuron เพื่อป้องกัน overfitting<br>
+                            - Data Augmentation : หมุน / พลิก / เลื่อนภาพเพื่อเพิ่มความหลากหลาย<br>
+                            - Freeze Base Layers (ResNet50) : ไม่เทรนชั้นล่างสุดของ ResNet
+                            เพื่อลดการปรับนํ้าหนักเกินจำเป็น<br>
+                            - Fine-tuning : ปลดล็อกบาง residual block เพื่อเรียนรู้เฉพาะ dataset ของเรา<br><br>
+                            <strong>Plot Train/Validation Accuracy & Loss </strong>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/4_2.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        <li><strong>5. Model MobileNet</strong></li>
+                        </p>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/5_1.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            - โมเดลเรียนรู้ได้ดีและมีความเสถียรใน 15 Epoch<br>
+                            <strong>Plot Train/Validation Accuracy & Loss </strong>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/5_2.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        </p>
+                        <li><strong>6. Model EfficientNetB0</strong></li>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/6_1.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            <strong>มีการเพิ่มชั้นใหม่บนสุดของโมเดล :<br> </strong>
+                            - Dropout(0.3) ลด overfitting หลัง validation accuracy เริ่มนิ่ง<br>
+                            - Dense(NUM_CLASSES, activation='softmax') สำหรับจำแนก 10 คลาส<br><br>
+                            <strong>Plot Train/Validation Accuracy & Loss </strong>
+                        </p>
+                        <div class="mb-10">
+                            <img src="misc/projects/Fruits/6_2.png" class="w-full max-w-[400px] rounded-xl shadow-lg">
+                        </div>
+                        </p>
+                        <li><strong>7. Best Model</strong></li>
+                        <p class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                            โมเดลที่ดีที่สุดที่เลือกมาคือ MobileNetV2 และ EfficientNetB0<br>
+                            จากการทดลองและสังเกตตามกราฟ พบว่า MobileNetV2 และ EfficientNetB0<br>
+                            เป็นโมเดลที่ให้ผลลัพธ์ดีที่สุดทั้งในด้าน “ความแม่นยำ” และ “ประสิทธิภาพการประมวลผล”<br>
+                            จึงเลือกนำมาวิเคราะห์และเปรียบเทียบอย่างละเอียด
+                        </p>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 border-t border-gray-200 text-sm">
+        <!-- Footer removed as requested -->
+    </footer>
+
+</body>
+
+</html>

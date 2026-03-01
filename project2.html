@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom Churn Analysis | Project Details</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS (animations only) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white text-gray-900 leading-relaxed antialiased">
+
+    <!-- Navigation -->
+    <nav class="h-20 flex items-center sticky top-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-[1000px] mx-auto px-5 flex justify-between items-center w-full">
+            <div class="text-2xl font-bold text-gray-900"><a href="index.html"></a></div>
+            <ul class="hidden md:flex list-none gap-8">
+                <li><a href="index.html#about"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">About</a></li>
+                <li><a href="index.html#skills"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Skills</a></li>
+                <li><a href="index.html#projects"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Projects</a></li>
+                <li><a href="index.html#contact"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Details -->
+    <section class="py-20">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="index.html#projects"
+                class="inline-block mb-5 px-7 py-3 rounded-md font-medium text-sm border border-gray-500 text-gray-500 hover:border-gray-600 hover:text-gray-600 hover:bg-gray-100 transition-all"><i
+                    class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+            <h1 class="text-4xl font-bold tracking-tight mb-2">Telecom Churn Analysis</h1>
+            <div class="mb-8">
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">Python</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">SQL
+                    Server</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">Power
+                    BI</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">Machine
+                    Learning</span>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold tracking-tight mb-3">Goal</h3>
+                <p class="text-gray-500 mb-2">
+                    Developed a complete analytics project to understand and predict customer churn. Built an ETL
+                    pipeline in SQL Server to clean and transform customer data. Designed a Power BI dashboard to
+                    visualize key metrics such as churn rate, customer segments, and revenue loss. Implemented
+                    predictive modeling to identify high-risk customers and support proactive retention strategies.
+                </p>
+                <p class="text-gray-400 italic">
+                    การศึกษาข้อมูลลูกค้าเพื่อดูว่าลูกค้าคนไหนมีแนวโน้มจะเลิกใช้บริการ (churn) ,
+                    ช่วยให้เข้าใจพฤติกรรมลูกค้า และปัจจัยเสี่ยงต่างๆ , และหาปัจจัยที่ทำให้เกิด churn
+                    เพื่อช่วยให้บริษัทสามารถวางแผนกลยุทธ์รักษาลูกค้าได้ดีขึ้น
+                </p>
+
+                <h3 class="text-xl font-bold tracking-tight mb-3 mt-6">Tools &amp; Techniques</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>Database &amp; ETL:</strong> ใช้ SQL Server สำหรับจัดเก็บและแปลงข้อมูลจากไฟล์ CSV
+                        เข้าสู่ฐานข้อมูล</li>
+                    <li><strong>Data Cleaning:</strong> ตรวจสอบค่าว่าง, จัดกลุ่มข้อมูล และจัดการค่า inconsistent
+                        ก่อนวิเคราะห์</li>
+                    <li><strong>Power BI:</strong> สร้าง Dashboard ที่แสดงภาพรวมเชิงข้อมูล เช่น Churn Rate,
+                        จำนวนลูกค้าทั้งหมด, การแบ่งกลุ่มตามเพศ อายุ หรือประเภทบริการ</li>
+                    <li><strong>Predictive Modeling:</strong> ระบบอาจรวมการทำนายลูกค้าที่มีแนวโน้มจะ churn ด้วย Machine
+                        Learning โดยใช้ algorithm Random Forest และอื่นๆ และแสดงผลลัพธ์บน Dashboard</li>
+                </ul>
+
+                <h3 class="text-xl font-bold tracking-tight mb-3">Workflow</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>Import and Load Data:</strong> นำข้อมูลลูกค้าจากไฟล์ .csv เข้าไปในฐานข้อมูล SQL Server
+                    </li>
+                    <li><strong>ETL &amp; Cleaning:</strong> ตรวจสอบข้อมูลที่ขาดหาย และย้ายข้อมูลไปตาราง production
+                        สำหรับใช้งาน</li>
+                    <li><strong>Data Transformation:</strong> สร้างตารางช่วย (auxiliary tables) เพื่อจัดกลุ่มอายุ,
+                        ระยะเวลาการเป็นลูกค้า, และระดับค่าบริการ</li>
+                    <li><strong>Dashboard:</strong> สร้าง Power BI Dashboard ที่มี metrics หลัก</li>
+                    <li><strong>Prediction:</strong> ใช้โมเดล Machine Learning เพื่อทำนายลูกค้าที่อาจ churn ในอนาคต
+                        และเชื่อมผลลัพธ์กับ Power BI</li>
+                </ul>
+                <h3 class="text-xl font-bold tracking-tight mb-3">Framework</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>Database / ETL : </strong>SQL Server , SSMS</li>
+                    <li><strong>Data Transformation : </strong>Power BI , Excel</li>
+                    <li><strong>Machine Learning : </strong>sklearn.ensemble.RandomForestClassifier</li>
+                    <li><strong>Model Evaluation : </strong>sklearn.metrics.classification_report,
+                        sklearn.metrics.confusion_matrix</li>
+                    <li><strong>Data Handling : </strong>Python (pandas , numpy , sklearn.preprocessing.LabelEncoder)
+                    </li>
+                    <li><strong>Visualization : </strong>Power BI , matplotlib , seaborn</li>
+                    <li><strong>API : </strong>pandas , numpy , scikit-learn , matplotlib / seaborn , joblib</li>
+                </ul>
+                <h3 class="text-xl font-bold tracking-tight mb-3">วิธีการแบบคร่าวๆ</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>1. เชื่อม SQL Server และสร้าง Database (ETL)</strong></li>
+                    <p class="text-gray-400 italic">
+                        1.1 เตรียม SQL Server และ Database<br>
+                        - dataset : https://pivotalstats.com/wp-content/uploads/2024/08/Data-Resources.zip<br>
+                        - SQL Server และ SQL Server Management Studio (SSMS)<br>
+                        - Server: ชื่อ SQL Server (เช่น localhost\SQLEXPRESS)<br>
+                        - Database เช่น db_Churn<br>
+                        1.2 สร้าง Table ชั่วคราวสำหรับโหลดข้อมูล (stg_table)<br>
+                        - นำข้อมูล CSV โหลดเข้ามาใน stg_Churn<br>
+                        - ก่อนนำเข้าข้อมูลจริง , สร้าง stg_Churn เพื่อเช็คความถูกต้องของข้อมูลก่อน<br>
+                        1.3 ทำความสะอาดข้อมูล (Data Cleaning / Transformation)<br>
+                        - แทนค่าที่เป็น NULL ด้วยค่า default หรือ “Unknown”<br>
+                        - แก้ค่าที่ไม่ถูกต้อง (เช่นถ้า Total_Charge น้อยกว่า 0 ให้เป็น 0)<Br>
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Telecom/1.png" alt="Telecom Churn Analysis Dashboard"
+                            class="w-full max-w-[400px] rounded-xl shadow-lg">
+                    </div>
+                    <li><strong>2. Load ข้อมูลสู่ Production Table และ Data Transformation</strong></li>
+                    <p class="text-gray-400 italic">
+                        2.1 สร้าง Production Table โดยนำข้อมูลจาก stg_Churn<br>
+                        - SELECT ... INTO prod_Churn FROM stg_Churn;<br>
+                        - Clean / Transform Data เพิ่มเติม<br>
+                        2.2 สร้าง Column ใหม่สำหรับวิเคราะห์<br>
+                        - Age Group (แยกอายุ เช่น ใน 20 35 50 ปี)<br>
+                        - Tenure Group (อายุการใช้งาน เช่น 6 เดือน 12 เดือน 1-2 ปี)<br>
+                        2.3 Validate Production Table
+                        - ตรวจสอบว่า ไม่มี NULL หรือค่าผิดปกติ ในคอลัมน์สำคัญ (Customer_ID, Churn_Flag)<br>
+                    </p>
+                    <li><strong>3. Data Transformation ใน Power BI</strong></li>
+                    <p class="text-gray-400 italic">
+                        3.1 เชื่อมต่อ Power BI กับ SQL Server<br>
+                        - เปิด Power BI Desktop → เลือก Get Data → SQL Server<br>
+                        - localhost\SQLEXPRESS , db_Churn<br>
+                        3.2 ตรวจสอบ Data Types ของแต่ละ Column<br>
+                        - คลิก Transform Data และ ตรวจสอบแต่ละ Column มี Data Type ถูกต้อง<br>
+                        3.3 สร้าง Calculated Columns<br>
+                        - เช่น Churn_Status = if [Churn_Flag] = 1 then "Churned" else "Stayed"<br>
+                        - Monthly Charge Group , Age Group , Tenure Group<br>
+                        3.4 สร้าง Measures สำหรับ Dashboard<br>
+                        - เช่น Churn_Rate = DIVIDE([Total_Churn],[Total_Customers],0)<br>
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Telecom/3.png" alt="Telecom Churn Analysis Dashboard"
+                            class="w-full max-w-[400px] rounded-xl shadow-lg">
+                    </div>
+                    <li><strong>4. สร้าง Visualization / Dashboard ใน Power BI</strong></li>
+                    <p class="text-gray-400 italic">
+                        - สร้าง Visual Card ต่างๆ เช่น Clustered Bar Chart , Stacked Column Chart , Bar Chart<br>
+                        - สร้าง Demographics Visualization ต่างๆ เช่น Total Churn by Gender , Sum of Age<br>
+                        - Transorm Data สร้าง Query ใหม้ ref จาก prod_Churn = mapping_AgeGrp , mapping_TenureGrp
+                        แล้วสร้าง column แยกอายุ<br>
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Telecom/4.png" alt="Telecom Churn Analysis Dashboard"
+                            class="w-full max-w-[400px] rounded-xl shadow-lg">
+                    </div>
+                    <li><strong>5. Machine Learning Model (Churn Prediction)</strong></li>
+                    <p class="text-gray-400 italic">
+                        เปิด Python (Jupyter Notebook)<br>
+                        - ติดตั้ง Library : pip install pandas numpy scikit-learn matplotlib seaborn<br>
+                        - load data : df = pd.read_csv("churn_data.csv")<br>
+                        เตรียมข้อมูล (Data Preprocessing)<br>
+                        - ลบ column ที่ไม่จำเป็น<br>
+                        - แบ่งข้อมูล Train / Test : 80% train , 20% test<br>
+                        สร้างโมเดล Random Forest<br>
+                        - rf_model = RandomForestClassifier(n_estimators=100, random_state=42)<br>
+                        ทดสอบโมเดล (Evaluate the model)<br>
+                        - y_pred = rf_model.predict(X_test)<br>
+                        - Confusion Matrix และ Classification Report : ดูค่า Accuracy , Precision , Recall ,
+                        F1-score<br>
+                        ทำนายลูกค้าใหม่<br>
+                        Export ผลลัพธ์กลับไปใช้ใน Power BI<br>
+                        - original_data.to_csv(r"...\Predictions.csv", index=False)<br>
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Telecom/5.png" alt="Telecom Churn Analysis Dashboard"
+                            class="w-full max-w-[600px] rounded-xl shadow-lg">
+                    </div>
+                    <li><strong>6. Visualization ของ Predicted Churn ใน Power BI</strong></li>
+                    <p class="text-gray-400 italic">
+                        - นำ Predictions.csv เข้า Power BI<br>
+                        สร้าง Calculated Column จัดกลุ่มความเสี่ยง<br>
+                        - เช่น count predicted churner โดยแยกชายหญิง<br>
+                        - ใส่ background และ ตกแต่ง dashboard<br>
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Telecom/6.png" alt="Telecom Churn Analysis Dashboard"
+                            class="w-full max-w-[600px] rounded-xl shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold tracking-tight mb-3">หลังจากทำครบทุกขั้นตอน คุณจะได้ ระบบวิเคราะห์การ
+                        churn แบบครบวงจรพร้อม Dashboard สำหรับวิเคราะห์ลูกค้า โมเดลทำนายลูกค้าเสี่ยง
+                        และเครื่องมือช่วยทีมลดการสูญเสียลูกค้า</h3>
+                    <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                        <li><strong>ระบบวิเคราะห์การ churn แบบครบวงจร</strong></li>
+                        <li><strong>Dashboard สำหรับวิเคราะห์ลูกค้าและติดตามความเสี่ยง</strong></li>
+                        <li><strong>โมเดลทำนายลูกค้าเสี่ยงพร้อมเครื่องมือช่วยทีมลดการสูญเสียลูกค้า</strong></li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 border-t border-gray-200 text-sm">
+        <!-- Footer removed as requested -->
+    </footer>
+
+</body>
+
+</html>

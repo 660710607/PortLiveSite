@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Clinic Database | Project Details</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS (animations only) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white text-gray-900 leading-relaxed antialiased">
+
+    <!-- Navigation -->
+    <nav class="h-20 flex items-center sticky top-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-[1000px] mx-auto px-5 flex justify-between items-center w-full">
+            <div class="text-2xl font-bold text-gray-900"><a href="index.html"></a></div>
+            <ul class="hidden md:flex list-none gap-8">
+                <li><a href="index.html#about"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">About</a></li>
+                <li><a href="index.html#skills"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Skills</a></li>
+                <li><a href="index.html#projects"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Projects</a></li>
+                <li><a href="index.html#contact"
+                        class="text-sm text-gray-500 font-medium hover:text-blue-600 transition-all">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Details -->
+    <section class="py-20">
+        <div class="max-w-[1000px] mx-auto px-5">
+            <a href="index.html#projects"
+                class="inline-block mb-5 px-7 py-3 rounded-md font-medium text-sm border border-gray-500 text-gray-500 hover:border-gray-600 hover:text-gray-600 hover:bg-gray-100 transition-all"><i
+                    class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+            <h1 class="text-4xl font-bold tracking-tight mb-2">Veterinary Clinic Database Management</h1>
+            <div class="mb-8">
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">SQL</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">MySQL</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">PuTTY</span>
+                <span class="text-xs text-blue-600 bg-blue-600/10 px-2.5 py-1 rounded mr-1 font-semibold">Python</span>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold tracking-tight mb-3">Overview</h3>
+                <p class="text-gray-500 mb-2">
+                    Developed a Python-based Veterinary Clinic Management System with MySQL backend. Implemented CRUD
+                    operations for customers, pets, service records, and medical records using a menu-driven CLI.
+                    Applied prepared statements to enhance database security and automated commits after each operation.
+                </p>
+                <p class="text-gray-400 italic">
+                    โปรแกรมนี้เป็นระบบจัดการข้อมูลคลินิกสัตวแพทย์ ที่ช่วยให้สามารถจัดการ ลูกค้า, สัตว์เลี้ยง, บริการ,
+                    และประวัติการรักษา ได้อย่างง่ายดาย ผ่านเมนูแบบ Command-Line Interface (CLI)
+                    โดยข้อมูลทั้งหมดถูกเก็บใน ฐานข้อมูล MySQL
+                </p>
+                <br>
+
+                <h3 class="text-xl font-bold tracking-tight mb-3">Key Features</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>Customer Management:</strong> จัดการลูกค้า</li>
+                    <li><strong>Animal Management:</strong> จัดการสัตว์เลี้ยง</li>
+                    <li><strong>Service Records:</strong> บันทึกการให้บริการ</li>
+                    <li><strong>Medical Records:</strong> บันทึกการรักษา</li>
+                </ul>
+
+                <h3 class="text-xl font-bold tracking-tight mb-3">Technical Highlights</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li>เขียนด้วย Python ใช้ MySQL Connector ในการเชื่อมต่อกับฐานข้อมูล</li>
+                    <li>มีระบบ menu-driven interface สำหรับการทำงานแบบ CLI</li>
+                    <li>รองรับ CRUD operations (Create, Read, Update, Delete) สำหรับข้อมูลลูกค้า, สัตว์เลี้ยง, บริการ,
+                        และบันทึกทางการแพทย์</li>
+                </ul>
+                <h3 class="text-xl font-bold tracking-tight mb-3">Framework</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>Database / ETL : </strong>MySQL</li>
+                    <li><strong>Terminal / SSH : </strong>PuTTY</li>
+                    <li><strong>Programming / Scripting : </strong>Python</li>
+                    <li><strong>Interface : </strong>CLI (Menu-driven)</li>
+                    <li><strong>API : </strong>mysql.connector , Python Standard Library</li>
+                </ul>
+
+                <h3 class="text-xl font-bold tracking-tight mb-3">วิธีการแบบคร่าวๆ</h3>
+                <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                    <li><strong>1.Business Rules (กฎทางธุรกิจ)</strong></li>
+                    <p class="text-gray-400 italic">
+                        - ลูกค้า 1 คน สามารถมีสัตว์เลี้ยงได้หลายตัว<br>
+                        - สัตว์เลี้ยงแต่ละตัว ต้องมีเจ้าของ (ลูกค้า) เพียง 1 คน<br>
+                        - ลูกค้า 1 คน สามารถสมัครสมาชิกได้ 1 สมาชิก<br>
+                        - สมาชิกจะมีคะแนนสะสม<br>
+                        - ลูกค้า 1 คน สามารถเข้ารับบริการได้หลายครั้ง<br>
+                        - สัตวแพทย์ 1 คน สามารถทำการรักษาได้หลายประเภท<br>
+                        - การรักษาแต่ละประเภท ต้องมีสัตวแพทย์รับผิดชอบ<br>
+                        - สัตวแพทย์ 1 คน สามารถบันทึกการรักษาได้หลายรายการ<br>
+                        - การรักษาแต่ละครั้งต้องมีบันทึกการรักษา<br>
+                        - สัตวแพทย์สามารถสั่งการทำงานให้พนักงานได้<br>
+                        - พนักงาน 1 คน สามารถถูกสั่งงานได้หลายครั้ง<br>
+                        - การชำระเงินต้องมีหลักฐานการชำระเงิน<br>
+                        - หลักฐานการชำระเงินต้องระบุพนักงานผู้รับเงิน<br>
+                        - ลูกค้า 1 คน สามารถมีการชำระเงินได้หลายครั้ง
+                    </p>
+                    <br>
+                    <li><strong>2.ER Diagram (สรุปโครงสร้าง Entity)</strong></li>
+                    <p class="text-gray-400 italic">
+                        แผนภาพใช้แสดงโครงสร้างข้อมูลของระบบ
+                        ใช้สำหรับออกแบบฐานข้อมูลขั้นต้นก่อนสร้างฐานข้อมูลจริง ประกอบด้วย:<br>
+                        - Entities , Attributes , Relationships
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Veterinary/2.jpg" alt="ER Diagram"
+                            class="w-full max-w-[500px] rounded-xl shadow-lg">
+                    </div>
+                    <li><strong>3.Relational Schema</strong></li>
+                    <p class="text-gray-400 italic">
+                        แทนโครงสร้างของฐานข้อมูลเชิงสัมพันธ์ในรูปแบบตาราง (tables)
+                        และความสัมพันธ์ระหว่างตาราง โดยประกอบด้วย:<br>
+                        - Table , Attributes , Primary Key , Foreign Key
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Veterinary/3.jpg" alt="Relational Schema"
+                            class="w-full max-w-[500px] rounded-xl shadow-lg">
+                    </div>
+                    <li><strong>4.Data Dictionary</strong></li>
+                    <p class="text-gray-400 italic">
+                        อธิบายรายละเอียดของข้อมูลทั้งหมดในฐานข้อมูล โดยให้ข้อมูลเชิงลึกเกี่ยวกับ<br>
+                        - ชื่อตารางและฟิลด์ , ประเภทข้อมูล , ขนาดข้อมูล ,คำอธิบายหรือความหมายของฟิลด์ ,
+                        Constraints ต่างๆ
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Veterinary/4.png" alt="Data Dictionary"
+                            class="w-full max-w-[500px] rounded-xl shadow-lg">
+                    </div>
+                    <li><strong>5.Implementation & Testing Phase</strong></li>
+                    <p class="text-gray-400 italic">
+                        - เชื่อมต่อฐานข้อมูล MySQL<br>
+                        เช่น mysql -u *** -p , mysql -u ***_user -p<br>
+                        และใช้ฐานข้อมูล use db_*** , use ***_db<br>
+                        - สร้างตารางใน Database (CREATE TABLE)<br>
+                        เช่น CREATE TABLE customer(...); , CREATE TABLE animal(...);
+                        - เพิ่มข้อมูลตัวอย่าง (INSERT)<br>
+                        เช้น INSERT INTO customer (...) VALUES (...);<br>
+                        - ทดสอบคำสั่ง Query และความสัมพันธ์ (SELECT / JOIN)<br>
+                        เช่น SELECT customer_id, animal_id FROM animal;<br>
+                        - พัฒนา CRUD ด้วย Python<br>
+                    </p>
+                    <div class="mb-10">
+                        <img src="misc/projects/Veterinary/5.png" alt="Data Dictionary"
+                            class="w-full max-w-[500px] rounded-xl shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold tracking-tight mb-3">หลังจากขั้นตอนทั้งหมดจะได้
+                        ระบบคลินิกสัตวแพทย์จำลอง ที่สมบูรณ์ทั้ง โครงสร้างฐานข้อมูล,
+                        ข้อมูลตัวอย่าง, ความถูกต้องของข้อมูล, และโปรแกรมใช้งานจริง ซึ่งสามารถใช้ทดลอง query,
+                        เพิ่ม/ลบ/แก้ไขข้อมูล และตรวจสอบการทำงานของระบบเหมือนระบบจริง</h3>
+                    <ul class="list-disc ml-5 text-gray-500 mb-5 leading-loose">
+                        <li><strong>ได้ database จำลองของคลินิกสัตวแพทย์</strong></li>
+                        <li><strong>ข้อมูลครบทุก entity: ลูกค้า, สัตว์เลี้ยง, สัตวแพทย์, พนักงาน, การบริการ,
+                                การชำระเงิน</strong></li>
+                        <li><strong>Constraint ทำให้ข้อมูล ถูกต้องและไม่ขัดแย้ง</strong></li>
+                        <li><strong>สามารถ รันโปรแกรม Python CRUD เพื่อจำลองการทำงานของคลินิกได้จริง</strong></li>
+                        <li><strong>สามารถ ทดลอง query เพื่อดูสถิติหรือประวัติการรักษา</strong></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 border-t border-gray-200 text-sm">
+        <!-- Footer removed as requested -->
+    </footer>
+
+</body>
+
+</html>
